@@ -1,13 +1,13 @@
 import './App.css';
 import Header from './Header/header';
-// import Hero from './Hero/hero';
+import Hero from './Hero/hero';
 
 
 function App() {
   return (
     <>
       <Header />
-      {/* <Hero />*/}
+      <Hero />
     </>
   );
 }
