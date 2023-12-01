@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/ecosolution/static/css/main.f665192f.css",
+    "main.js": "/ecosolution/static/js/main.00530f1b.js",
+    "static/media/FiraSans-Regular.ttf": "/ecosolution/static/media/FiraSans-Regular.f4eb295ecc2fb842d61c.ttf",
+    "static/media/Oswald-Regular.ttf": "/ecosolution/static/media/Oswald-Regular.31bce04a1ae8549b1464.ttf",
+    "index.html": "/ecosolution/index.html",
+    "static/media/touch_down.svg": "/ecosolution/static/media/touch_down.0d1f95f92fb8b42968e950c9495c82b3.svg",
+    "static/media/menu.svg": "/ecosolution/static/media/menu.03e96d8790194653b6ccfb63ad04f462.svg",
+    "main.f665192f.css.map": "/ecosolution/static/css/main.f665192f.css.map",
+    "main.00530f1b.js.map": "/ecosolution/static/js/main.00530f1b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f665192f.css",
+    "static/js/main.00530f1b.js"
+  ]
+}
