@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('../Fonts/Oswald-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../Fonts/FiraSans-Regular.ttf');
+}
+
+:root {
+
+    --main-black: #292d32;
+    --main-dark-green: #173d33;
+    --main-green: #97d28b;
+    --main-bg: #f3f5fa;
+    --second-light-green: #dcefd8;
+    --second-bg: #eaedf1;
+    --white: #fff;
+    --error-red: #d28b8b;
+    
+   
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Oswald';
+    background-color: var(--main-bg);
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+ul,
+ol,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 36px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 100%;
+    background-color: var(--main-bg);
+
+    @media screen and (min-width: 360px) {
+        width: 360px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-right: 30px;
+        padding-left: 30px;
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-top: 24px;
+        width: 1240px;
+        padding: 0;
+    }
+}
+
+
+.hidden {
+    display: none;
+}
