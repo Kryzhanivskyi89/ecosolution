@@ -1,17 +1,29 @@
 {
   "files": {
     "main.css": "/ecosolution/static/css/main.f665192f.css",
-    "main.js": "/ecosolution/static/js/main.00530f1b.js",
+    "main.js": "/ecosolution/static/js/main.2006376a.js",
+    "static/media/hero_desktop.png": "/ecosolution/static/media/hero_desktop.762a1926813167dfb983.png",
+    "static/media/hero_tablet.png": "/ecosolution/static/media/hero_tablet.a0dad29fb79b3bcefcfb.png",
     "static/media/FiraSans-Regular.ttf": "/ecosolution/static/media/FiraSans-Regular.f4eb295ecc2fb842d61c.ttf",
+    "static/media/values-man_desk.png": "/ecosolution/static/media/values-man_desk.c972965c14de6caee6e5.png",
+    "static/media/values-men_desk.png": "/ecosolution/static/media/values-men_desk.c67bf10fb0b37aec4b2f.png",
+    "static/media/hero_mobile.png": "/ecosolution/static/media/hero_mobile.82188a65894393fb43c5.png",
+    "static/media/values-men_tab.png": "/ecosolution/static/media/values-men_tab.495425bcc40ab7b9ecae.png",
+    "static/media/values-man_tab.png": "/ecosolution/static/media/values-man_tab.b9e07be8b9abef76724b.png",
     "static/media/Oswald-Regular.ttf": "/ecosolution/static/media/Oswald-Regular.31bce04a1ae8549b1464.ttf",
+    "static/media/innovation.svg": "/ecosolution/static/media/innovation.09c792685007a705b0bb20e017ad50b7.svg",
+    "static/media/quality.svg": "/ecosolution/static/media/quality.91f97cf95a567b1f73be2e9d63a041dd.svg",
+    "static/media/responsibility.svg": "/ecosolution/static/media/responsibility.1c83116edc615bb57d0bac9f576d4e14.svg",
+    "static/media/openness.svg": "/ecosolution/static/media/openness.e09b2e717d0e2b3e1450b28fdf496960.svg",
     "index.html": "/ecosolution/index.html",
     "static/media/touch_down.svg": "/ecosolution/static/media/touch_down.0d1f95f92fb8b42968e950c9495c82b3.svg",
+    "static/media/learn-more.svg": "/ecosolution/static/media/learn-more.8085c25571bd171528539d4316d4f244.svg",
     "static/media/menu.svg": "/ecosolution/static/media/menu.03e96d8790194653b6ccfb63ad04f462.svg",
     "main.f665192f.css.map": "/ecosolution/static/css/main.f665192f.css.map",
-    "main.00530f1b.js.map": "/ecosolution/static/js/main.00530f1b.js.map"
+    "main.2006376a.js.map": "/ecosolution/static/js/main.2006376a.js.map"
   },
   "entrypoints": [
     "static/css/main.f665192f.css",
-    "static/js/main.00530f1b.js"
+    "static/js/main.2006376a.js"
   ]
 }
