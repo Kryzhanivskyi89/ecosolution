@@ -1,72 +1,45 @@
-
+import {Slider} from './Slider/slider'
 import {
   Wrapper,
   CasesHeader,
   CasesHeaderTitle,
   CasesHeaderLineVertical,
-  CasesHeaderButtonsWrapper,
-  CasesHeaderNumber,
+  CasesHeaderWrapper,
+  CasesButtonsWrapper,
   CasesHeaderNumberTotal,
   Right,
   CasesHeaderButtonLeft,
   CasesHeaderButtonRight,
   
-  SliderItems,
-  SliderItemsImage,
-  SliderItemsInfo,
-  SliderItemsDescription,
-  SliderItemsDescriptionTitle,
-  SliderItemsDescriptionButton,
-  CasesHeaderLineHorizont,
-  SliderItemsInfoTime,
-  SliderItemsInfoTimeText,
-  SliderItemsInfoTimeDate,
 } from './cases.styled';
 
 const Cases = () => {
 
-    
-    
   return (
     <>
       <Wrapper id="cases">
         <CasesHeader>
-          <CasesHeaderTitle>Successful cases of our company</CasesHeaderTitle>
-          <CasesHeaderLineVertical />
-          <CasesHeaderButtonsWrapper>
-            <CasesHeaderNumber>
-              
-              <CasesHeaderNumberTotal>/05</CasesHeaderNumberTotal>
-            </CasesHeaderNumber>
-            <CasesHeaderButtonRight >
-              <Right rotateright="true" />
-            </CasesHeaderButtonRight>
-            <CasesHeaderButtonLeft >
-              <Right />
-            </CasesHeaderButtonLeft>
-          </CasesHeaderButtonsWrapper>
+            <CasesHeaderTitle>Successful cases of our company</CasesHeaderTitle>
+            <CasesHeaderLineVertical />
+                <CasesHeaderWrapper>
+                  
+                        <CasesHeaderNumberTotal className={` pagination`}>
+                        </CasesHeaderNumberTotal>
+                        
+                  <CasesButtonsWrapper>
+                      <CasesHeaderButtonRight className={`prev`}>
+                        <Right rotateright="true" />
+                      </CasesHeaderButtonRight>
+                      <CasesHeaderButtonLeft className={`next`}>
+                        <Right />
+                      </CasesHeaderButtonLeft>
+                  </CasesButtonsWrapper>
+                  
+                </CasesHeaderWrapper>
         </CasesHeader>
-     
-
-        <SliderItems>
-        <SliderItemsImage>
-          
-        </SliderItemsImage>
-        <SliderItemsInfo>
-          <SliderItemsDescription>
-            <SliderItemsDescriptionTitle>title</SliderItemsDescriptionTitle>
-            <SliderItemsDescriptionButton>
-              <Right rotateupleft="true" scale={0.77} />
-            </SliderItemsDescriptionButton>
-          </SliderItemsDescription>
-          <CasesHeaderLineHorizont />
-          <SliderItemsInfoTime>
-            <SliderItemsInfoTimeText>інфо</SliderItemsInfoTimeText>
-            <SliderItemsInfoTimeDate>дата</SliderItemsInfoTimeDate>
-          </SliderItemsInfoTime>
-        </SliderItemsInfo>
-      </SliderItems>
-
+       
+        <Slider />
+        
       </Wrapper>
     </>
   );

@@ -32,7 +32,7 @@ const scrollContactUs = () => {
   };
 
 export function Faq() {
-    const [openId, setOpenId] = useState(faqData[1].id);
+    const [openId, setOpenId] = useState(faqData[0].id);
 
     function handleClick(id) {
         if (id === openId) {

@@ -1,4 +1,4 @@
-// import { Linee } from 'utils/line.styled';
+
 import {
     Wrapper,
     HeroInfo,
@@ -17,6 +17,23 @@ import {
     HeroImage,
 } from './hero.styled';
 
+  const scrollCases = () => {
+    const sectionId = 'cases';
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      const headerHeight = 70;
+      const sectionRect = section.getBoundingClientRect();
+
+      window.scrollTo({
+        top: sectionRect.top + window.scrollY - headerHeight,
+        left: 0,
+        duration: 500,
+        behavior: 'smooth',
+      });
+    }
+  };
+
 const Main = () => {
   return (
     <>
@@ -31,7 +48,7 @@ const Main = () => {
               sources, generating power generation using energy wind, sun,
               water, biomass
             </HeroText>
-            <ButtonLearnMore>
+            <ButtonLearnMore onClick={scrollCases}>
               <TextLearnMore>Learn more</TextLearnMore>
               <ArrowLearnMore />
             </ButtonLearnMore>

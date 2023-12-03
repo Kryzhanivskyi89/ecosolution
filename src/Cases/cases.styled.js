@@ -61,7 +61,7 @@ export const CasesHeaderLineVertical = styled.div`
       }
 `;
 
-export const CasesHeaderButtonsWrapper = styled.div`
+export const CasesHeaderWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -74,30 +74,24 @@ export const CasesHeaderButtonsWrapper = styled.div`
       }
 `;
 
-export const CasesHeaderNumber = styled.p`
-  display: flex;
-  width: 72px;
-  text-align: justify;
-  font-family: Fira Sans;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  letter-spacing: -1.12px;
+export const CasesHeaderNumberTotal = styled.div`
   color: var(--main-dark-green);
-    @media screen and (min-width: 768px) {
-      width: 74px;
-    }
+	text-align: justify;
+	font-family: Fira Sans;
+	font-size: 28px;
+	font-weight: 300;
+	letter-spacing: -1.12px;
+      span {
+	color: rgba(23, 61, 51, 0.25);
+}
 `;
 
-export const CasesHeaderNumberTotal = styled.span`
-  color: rgba(23, 61, 51, 0.25);
-  font-family: Fira Sans;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  letter-spacing: -1.12px;
+export const CasesButtonsWrapper = styled.div`
+    display: flex;
+    gap: 12px;
+      @media screen and (min-width: $desktop) {
+        gap: 24px;
+      }
 `;
 
 export const Right = styled(ReactSVG).attrs({
@@ -106,6 +100,7 @@ export const Right = styled(ReactSVG).attrs({
   width: ${props => (props.size ? props.size + 'px' : '36px')};
   height: ${props => (props.size ? props.size + 'px' : '36px')};
   stroke: var(--main-dark-green);
+  fill: var(--main-green);
 
   transform: ${props => {
     let transformValue = '';
@@ -125,11 +120,12 @@ export const CasesHeaderButtonLeft = styled.button`
   margin-left: auto;
   border-radius: 100px;
   border: 1px solid var(--main-dark-green);
-  background: var(--main-bg);
+  color: var(--main-dark-green);
     &:hover {
       border: 1px solid var(--main-green);
       ${Right} {
         stroke: var(--main-green);
+        fill: var(--main-dark-green);
       }
     }
     @media screen and (min-width: 1280px) {
@@ -190,6 +186,10 @@ export const SliderItemsImage = styled.div`
     @media screen and (min-width: 1280px) {
       margin-bottom: 36px;
     }
+`;
+
+export const SliderImage = styled.img`
+  width: 100%;
 `;
 
 export const SliderItemsInfo = styled.div`

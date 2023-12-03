@@ -7,7 +7,7 @@ padding: 18px 0;
 	}
 
 	@media screen and (min-width: 1280px) {
-		padding: 120px 0;
+		padding: 60px 0;
 	}
 `;
 
