@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ecosolution/static/css/main.f665192f.css",
-    "main.js": "/ecosolution/static/js/main.2006376a.js",
+    "main.css": "/ecosolution/static/css/main.7f8468e1.css",
+    "main.js": "/ecosolution/static/js/main.be33b637.js",
     "static/media/hero_desktop.png": "/ecosolution/static/media/hero_desktop.762a1926813167dfb983.png",
     "static/media/hero_tablet.png": "/ecosolution/static/media/hero_tablet.a0dad29fb79b3bcefcfb.png",
     "static/media/FiraSans-Regular.ttf": "/ecosolution/static/media/FiraSans-Regular.f4eb295ecc2fb842d61c.ttf",
@@ -14,16 +14,25 @@
     "static/media/innovation.svg": "/ecosolution/static/media/innovation.09c792685007a705b0bb20e017ad50b7.svg",
     "static/media/quality.svg": "/ecosolution/static/media/quality.91f97cf95a567b1f73be2e9d63a041dd.svg",
     "static/media/responsibility.svg": "/ecosolution/static/media/responsibility.1c83116edc615bb57d0bac9f576d4e14.svg",
+    "static/media/phone.svg": "/ecosolution/static/media/phone.a35112e887d456e0a21019bb33fe8a30.svg",
     "static/media/openness.svg": "/ecosolution/static/media/openness.e09b2e717d0e2b3e1450b28fdf496960.svg",
+    "static/media/adres.svg": "/ecosolution/static/media/adres.e4e2e5100e76d7fedb731428156eefef.svg",
     "index.html": "/ecosolution/index.html",
+    "static/media/instagram.svg": "/ecosolution/static/media/instagram.e32ffbe458f529969dbc838f82882395.svg",
+    "static/media/facebook.svg": "/ecosolution/static/media/facebook.14f76e3c7aa85156114b91988e17f1de.svg",
     "static/media/touch_down.svg": "/ecosolution/static/media/touch_down.0d1f95f92fb8b42968e950c9495c82b3.svg",
+    "static/media/down.svg": "/ecosolution/static/media/down.7ac8554e4e21758b2ac6fec8683589f6.svg",
+    "static/media/email.svg": "/ecosolution/static/media/email.cf8a8603679096c2aefd3b9bd74ac7b2.svg",
+    "static/media/right.svg": "/ecosolution/static/media/right.8cc073a815441eeb853c37ce25245cf5.svg",
     "static/media/learn-more.svg": "/ecosolution/static/media/learn-more.8085c25571bd171528539d4316d4f244.svg",
+    "static/media/plus.svg": "/ecosolution/static/media/plus.18018ecb7520511c1ef7ed7229d22d4c.svg",
     "static/media/menu.svg": "/ecosolution/static/media/menu.03e96d8790194653b6ccfb63ad04f462.svg",
-    "main.f665192f.css.map": "/ecosolution/static/css/main.f665192f.css.map",
-    "main.2006376a.js.map": "/ecosolution/static/js/main.2006376a.js.map"
+    "static/media/minus.svg": "/ecosolution/static/media/minus.06823d08b7149db9f2adc6371ef81ae6.svg",
+    "main.7f8468e1.css.map": "/ecosolution/static/css/main.7f8468e1.css.map",
+    "main.be33b637.js.map": "/ecosolution/static/js/main.be33b637.js.map"
   },
   "entrypoints": [
-    "static/css/main.f665192f.css",
-    "static/js/main.2006376a.js"
+    "static/css/main.7f8468e1.css",
+    "static/js/main.be33b637.js"
   ]
 }
