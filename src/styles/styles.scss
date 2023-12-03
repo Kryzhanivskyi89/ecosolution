@@ -59,10 +59,27 @@ h5,
 h6,
 p {
     margin: 0;
+    padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
 }
 
 button {
+    
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    background-color: inherit;
+    box-shadow: none;
     cursor: pointer;
+}
+
+:focus,
+:active {
+    outline: none;
 }
 
 .container {

@@ -5,6 +5,7 @@ import Values from './Values/values';
 import Electricity from './Electricity/electricity';
 import Cases from './Cases/cases'
 import ContactUs from './ContactUs/contactUs';
+import { Faq } from './FAQ/faq';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Values />
         <Electricity />
         <Cases />
+        <Faq/>
         <ContactUs />
       </div>
     </>

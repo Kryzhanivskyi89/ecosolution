@@ -7,7 +7,7 @@ const ContactUs = () => {
  
   return (
     <>
-      <ContactUsSection>
+      <ContactUsSection id="contact">
         <ContactUsTitle>Contact us</ContactUsTitle>
         <Wrapper>
           <Contacts />
