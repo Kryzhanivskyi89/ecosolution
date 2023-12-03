@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { ReactSVG } from 'react-svg';
+import right from '../../images/right.svg';
 
 export const ContactForm = styled.form`
     display: flex;
@@ -9,7 +11,6 @@ export const ContactForm = styled.form`
             width: 342px;
             padding: 36px 24px;
         }
-
         @media screen and (min-width: 1280px) {
             width: 596px;
             padding: 48px;
@@ -45,6 +46,7 @@ export const ContactFormTitle = styled.p`
 export const ContactFormInput = styled.input`
     width: 100%;
 	padding-bottom: 8px;
+	border: none;
 	border-bottom: 1px solid var(--main-green);;
 	color: #828382;
 	background-color: transparent;
@@ -57,11 +59,21 @@ export const ContactFormInput = styled.input`
         }
 `;
 
-
+export const FormError = styled.input`
+//   position: absolute;
+//   top: 32px;
+//   right: 8px;
+//   font-size: 8px;
+  border-color: red;
+	@media screen and (min-width: 768px) {
+		font-size: 12px;
+	}
+`;
 
 export const ContactFormText = styled.textarea`
     width: 100%;
 	height: 147px;
+	border: none;
 	border-bottom: 1px solid var(--main-green);;
 	color: #828382;
 	background-color: transparent;
@@ -80,31 +92,35 @@ export const ContactFormSubmit = styled.button`
 	align-items: center;
 	align-self: flex-end;
 	gap: 12px;
+	width: 100px;
 	height: 39px;
 	padding: 4px 4px 4px 16px;
 	border-radius: 500px;
 	border: 1px solid var(--main-green);
-	color: var(--main-dark-green);
+	
 	font-family: Fira Sans;
 	font-size: 16px;
 	line-height: calc(18px / 16px);
 	letter-spacing: -0.64px;
         &:hover,
         &:focus {
-            color: #fff;
-            background-color: var(--main-green);
+            color: var(--main-green);
+            background: var(--main-dark-green)
         }
 `;
 	
-export const ContactSubmitIconWrapper = styled.div`
-    display: flex;
-	align-items: center;
-	padding: 8px;
-	border-radius: 100px;
-	background: var(--main-green);;
-`;
+// export const ContactSubmitIconWrapper = styled.div`
+//     display: flex;
+// 	align-items: center;
+// 	padding: 8px;
+// 	border-radius: 100px;
+// 	background: var(--main-green);;
+// `;
 
-export const ContactFromArrowIcon = styled.img`
-    stroke: currentColor;
+export const Right = styled(ReactSVG).attrs({
+  src: right,
+})`
+  width: 32px;
+  height: 32px;
 `;
 

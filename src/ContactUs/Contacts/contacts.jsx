@@ -14,7 +14,6 @@ import {
     Instagram,
 } from './contacts.styled';
 
-
 const Contacts = () => {
 
   return (

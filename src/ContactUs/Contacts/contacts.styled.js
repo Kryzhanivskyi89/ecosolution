@@ -9,15 +9,11 @@ import instagram from '../../images/instagram.svg';
 export const Wrapper = styled.div`
 	margin: 0 auto;
 	padding: 0 px;
-
 		@media screen and (min-width: 480px) {
 			max-width: 480px;
-		}
-
 		@media screen and (min-width: 768px) {
 			max-width: 768px;
 		}
-
 		@media screen and (min-width: 1280px) {
 			max-width: 1280px;
 		}
@@ -32,7 +28,6 @@ export const ContactSocialList = styled.ul`
 			margin-bottom: 0;
 			max-width: 244px;
 		}
-
 		@media screen and (min-width: 1280px) {
 			max-width: 466px;
 		}
@@ -58,7 +53,7 @@ export const ContactSocialItemWrapper = styled.div`
 
 `;
 
-export const ContactLink = styled.a`
+export const ContactLink = styled.p`
     display: flex;
 	align-items: center;
 	gap: 8px;
@@ -66,6 +61,7 @@ export const ContactLink = styled.a`
 	text-align: justify;
 	font-family: Fira Sans;
 	font-size: 20px;
+	font-style: normal;
 	letter-spacing: -0.8px;
 		&:hover,
 		&:focus {
@@ -86,43 +82,37 @@ export const IconWrapper = styled.div`
 export const Phone = styled(ReactSVG).attrs({
   src: phone,
 })`
-    // display: flex;
-    // flex-shrink: 0;
-    // justify-content: center;
-    // align-items: center;
-    // width: 16px;
-    // height: 16px;
-    //     @media screen and (min-width: 1280px) {
-    //         transform: scale(1.5);
-    //     }
+    width: 24px;
+	height: 24px;
+	cursor: pointer;
+	stroke: var(--main-dark-green);
+		&:hover {
+			stroke: var(--main-green);
+		}
 `;
 
 export const Email = styled(ReactSVG).attrs({
   src: email,
 })`
-    // display: flex;
-    // flex-shrink: 0;
-    // justify-content: center;
-    // align-items: center;
-    // width: 16px;
-    // height: 16px;
-    //     @media screen and (min-width: 1280px) {
-    //         transform: scale(1.5);
-    //     }
+    width: 24px;
+	height: 24px;
+	cursor: pointer;
+	stroke: var(--main-dark-green);
+		&:hover {
+			stroke: var(--main-green);
+		}
 `;
 
 export const Adres = styled(ReactSVG).attrs({
   src: adres,
 })`
-    // display: flex;
-    // flex-shrink: 0;
-    // justify-content: center;
-    // align-items: center;
-    // width: 16px;
-    // height: 16px;
-    //     @media screen and (min-width: 1280px) {
-    //         transform: scale(1.5);
-    //     }
+    width: 24px;
+	height: 24px;
+	cursor: pointer;
+	stroke: var(--main-dark-green);
+		&:hover {
+			stroke: var(--main-green);
+		}
 `;
 
 export const ContactSocialLinkWrapper = styled.div`
@@ -134,14 +124,12 @@ export const Facebook = styled(ReactSVG).attrs({
   src: facebook,
 })`
 	stroke: var(--main-dark-green);
-	
 `;
 
 export const Instagram = styled(ReactSVG).attrs({
   src: instagram,
 })`
 	stroke: var(--main-dark-green);
-		
 `;
 
 export const ContactSocialLink = styled.a`
@@ -157,7 +145,6 @@ export const ContactSocialLink = styled.a`
         		stroke: var(--main-green);
       		}
 		}
-
 		@media screen and (min-width: 1280px) {
 			padding: 0;
 		}
