@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ecosolution/static/css/main.7f8468e1.css",
-    "main.js": "/ecosolution/static/js/main.be33b637.js",
+    "main.js": "/ecosolution/static/js/main.cdb8b066.js",
     "static/media/hero_desktop.png": "/ecosolution/static/media/hero_desktop.762a1926813167dfb983.png",
     "static/media/hero_tablet.png": "/ecosolution/static/media/hero_tablet.a0dad29fb79b3bcefcfb.png",
     "static/media/FiraSans-Regular.ttf": "/ecosolution/static/media/FiraSans-Regular.f4eb295ecc2fb842d61c.ttf",
@@ -25,14 +25,15 @@
     "static/media/email.svg": "/ecosolution/static/media/email.cf8a8603679096c2aefd3b9bd74ac7b2.svg",
     "static/media/right.svg": "/ecosolution/static/media/right.8cc073a815441eeb853c37ce25245cf5.svg",
     "static/media/learn-more.svg": "/ecosolution/static/media/learn-more.8085c25571bd171528539d4316d4f244.svg",
+    "static/media/up.svg": "/ecosolution/static/media/up.426cfe1fe573b7a7fa7945d4fb7dfa01.svg",
     "static/media/plus.svg": "/ecosolution/static/media/plus.18018ecb7520511c1ef7ed7229d22d4c.svg",
     "static/media/menu.svg": "/ecosolution/static/media/menu.03e96d8790194653b6ccfb63ad04f462.svg",
     "static/media/minus.svg": "/ecosolution/static/media/minus.06823d08b7149db9f2adc6371ef81ae6.svg",
     "main.7f8468e1.css.map": "/ecosolution/static/css/main.7f8468e1.css.map",
-    "main.be33b637.js.map": "/ecosolution/static/js/main.be33b637.js.map"
+    "main.cdb8b066.js.map": "/ecosolution/static/js/main.cdb8b066.js.map"
   },
   "entrypoints": [
     "static/css/main.7f8468e1.css",
-    "static/js/main.be33b637.js"
+    "static/js/main.cdb8b066.js"
   ]
 }
