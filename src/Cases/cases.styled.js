@@ -99,9 +99,7 @@ export const Right = styled(ReactSVG).attrs({
 })`
   width: ${props => (props.size ? props.size + 'px' : '36px')};
   height: ${props => (props.size ? props.size + 'px' : '36px')};
-  stroke: var(--main-dark-green);
-  fill: var(--main-green);
-
+  
   transform: ${props => {
     let transformValue = '';
     if (props.rotateright) transformValue += 'rotateY(180deg) ';
@@ -124,8 +122,7 @@ export const CasesHeaderButtonLeft = styled.button`
     &:hover {
       border: 1px solid var(--main-green);
       ${Right} {
-        stroke: var(--main-green);
-        fill: var(--main-dark-green);
+        // stroke: var(--main-green);
       }
     }
     @media screen and (min-width: 1280px) {
@@ -147,7 +144,7 @@ export const CasesHeaderButtonRight = styled.button`
     &:hover {
       border: 1px solid var(--main-green);
       ${Right} {
-        stroke: var(--main-green);
+        // stroke: var(--main-green);
       }
     }
     @media screen and (min-width: 1280px) {
@@ -253,7 +250,7 @@ export const SliderItemsDescriptionButton = styled.button`
     &:hover {
       background: var(--main-dark-green);
       ${Right} {
-        stroke: var(--main-green);
+        stroke: var(--main-dark-green);
       }
     }
 `;

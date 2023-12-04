@@ -60,7 +60,7 @@ export function Slider() {
                             <SliderItemsDescription>
                                 <SliderItemsDescriptionTitle>{title}</SliderItemsDescriptionTitle>
                                 <SliderItemsDescriptionButton>
-                                <Right rotateupleft="true" scale={0.77} />
+                                    <Right rotateupleft="true" scale={0.77} />
                                 </SliderItemsDescriptionButton>
                             </SliderItemsDescription>
                             <CasesHeaderLineHorizont />
