@@ -43,7 +43,7 @@ export function Faq() {
     }
 
     return (
-        <Wrapper name="FAQ">
+        <Wrapper name="FAQ" id='faq'>
             <div className="container">
                 <FaqWrapper>
                     <FaqTitlle>Frequently Asked Questions</FaqTitlle>

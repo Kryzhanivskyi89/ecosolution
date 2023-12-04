@@ -1,12 +1,15 @@
-
+import { useState, useEffect } from 'react';
+import McDonaldsMenu from '../McDonaldsMenu/mcDonaldsMenu';
 import Logo from '../Logo/logo';
 import {
-  Container,
-  BurgerButton,
+  Wrapper,
+  HeaderWrapper,
+  McDonaldsMenuButton,
   ButtonIcon,
   ButtonTouch,
   TouchText,
   TouchDown,
+  McDonaldsMenuHidden,
 } from './header.styled';
 
 const scrollContactUs = () => {
@@ -25,20 +28,53 @@ const scrollContactUs = () => {
     });
   }
 };
+
 const Header = () => {
+
+  const useOpenMcDonaldsMenu = ({ styles }) => {
+    const [openMenu, setOpenMenu] = useState(false);
+
+      useEffect(() => {
+        if (openMenu) {
+          return document.body.classList.add(styles);
+        }
+        document.body.classList.remove(styles);
+      }, [openMenu, styles]);
+
+    return { openMenu, setOpenMenu };
+  };
+
+  const { openMenu, setOpenMenu } = useOpenMcDonaldsMenu('modalOpen');
+
+  const openModal = () => {
+    setOpenMenu(true);
+  };
+
+  const closeModal = () => {
+    setOpenMenu(false);
+  };
 
   return (
     <>
-      <Container id="header">
-        <Logo />
-        <BurgerButton>
-          <ButtonIcon />
-        </BurgerButton>
-        <ButtonTouch onClick={scrollContactUs}>
-          <TouchText>Get in touch</TouchText>
-          <TouchDown />
-        </ButtonTouch>
-      </Container>
+      <Wrapper id="header">
+        <HeaderWrapper >
+          <Logo />
+          <McDonaldsMenuButton onClick={openMenu ? closeModal : openModal}>
+            <ButtonIcon />
+          </McDonaldsMenuButton>
+          <ButtonTouch onClick={scrollContactUs}>
+            <TouchText>Get in touch</TouchText>
+            <TouchDown />
+          </ButtonTouch>
+        </HeaderWrapper>
+      </Wrapper>
+      {openMenu && (
+          <div id="modal">
+            <McDonaldsMenuHidden className={openMenu ? 'modal-open' : ''}>
+              <McDonaldsMenu onClose={closeModal}/>
+            </McDonaldsMenuHidden>
+          </div>
+        )}
     </>
   );
 };

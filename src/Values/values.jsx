@@ -22,7 +22,7 @@ import {
 const Values = () => {
   return (
     <>
-      <Wrapper>
+      <Wrapper id='values'>
         <MainValues>
           <MainValueTitle>Main values of our company</MainValueTitle>
           <Rectangle />

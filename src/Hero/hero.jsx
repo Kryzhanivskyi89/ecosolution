@@ -37,7 +37,7 @@ import {
 const Main = () => {
   return (
     <>
-      <Wrapper>
+      <Wrapper id='hero'>
         <HeroInfo>
           <HeroTitle>
             <TitleText>renewable energy for any task</TitleText>

@@ -3,27 +3,29 @@ import { ReactSVG } from 'react-svg';
 import buttonIcon from '../images/menu.svg';
 import down from '../images/touch_down.svg';
 
-export const Container = styled.div`
+export const Wrapper = styled.div`
   position: sticky;
   top: 0;
+  z-index: 2;
+`;
+
+export const HeaderWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  top: 0;
   height: 40px;
   padding: 0;
   background-color: var(--main-bg);
-  z-index: 10;
-
-  @media screen and (min-width: 768px) {
-    height: 68px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    padding: 0;
-  }
+    @media screen and (min-width: 768px) {
+      height: 68px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding: 0;
+    }
 `;
 
-export const BurgerButton = styled.button`
+export const McDonaldsMenuButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,6 +41,7 @@ export const BurgerButton = styled.button`
     background-color: var(--main-green);
   }
 `;
+
 export const ButtonIcon = styled.img`
   width: 16px;
   height: 16px;
@@ -107,4 +110,11 @@ export const ButtonTouch = styled.button`
       }
     }
   }
+`;
+
+export const McDonaldsMenuHidden = styled.div`
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  overflow: hidden;
 `;
