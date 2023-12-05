@@ -11,7 +11,7 @@ export const FooterLine = styled.div`
     background: var(--main-green);
 `;
 
-export const Wrapper = styled.section`
+export const Wrapper = styled.footer`
   display: flex;
   flex-direction: column;
   gap: 24px;

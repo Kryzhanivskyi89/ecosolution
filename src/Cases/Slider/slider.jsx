@@ -19,36 +19,41 @@ import {
   SliderItemsInfoTimeDate,
 } from '../cases.styled';
 
+const sliderSettings = {
+    modules: [Navigation, Pagination],
+    spaceBetween:24,
+    slidesPerView: "auto",
+    breakpoints:{
+        768: {spaceBetween: 24, slidesPerView: 2,},
+        1280: {spaceBetween: 48, slidesPerView: 2,},
+    },
+    autoplay: {delay: 2500, disableOnInteraction: true,},
+    speed: 1000,
+    loop:true,
+    navigation: {nextEl: '.next',prevEl: '.prev',},
+    pagination:{
+        el: '.pagination',
+        type: 'custom',
+        renderCustom: function (swiper, current, total) {
+            if (current < 10) {
+                current = `0${current}`;
+            }
+            if (total < 10) {
+                total = `0${total}`;
+            }
+            return `
+		    	${current}
+				<span>
+					/${total}
+				</span>
+			`;
+        },
+    }
+}
+
 export function Slider() {
     return (
-        <Swiper
-            modules={[Navigation, Pagination]}
-            spaceBetween={24}
-            slidesPerView="auto"
-            loop={true}
-            navigation={{
-                nextEl: '.next',
-                prevEl: '.prev',
-            }}
-            pagination={{
-                el: '.pagination',
-                type: 'custom',
-                renderCustom: function (swiper, current, total) {
-                    if (current < 10) {
-                        current = `0${current}`;
-                    }
-                    if (total < 10) {
-                        total = `0${total}`;
-                    }
-                    return `
-						${current}
-						<span>
-							/${total}
-						</span>
-					`;
-                },
-            }}
-        >
+        <Swiper {...sliderSettings} >
             {sliderData.map(({ id, photo, alt, title, date }) => {
                 return (
                     <SwiperSlide key={id} >

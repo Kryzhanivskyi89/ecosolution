@@ -3,7 +3,7 @@ import { ReactSVG } from 'react-svg';
 import buttonIcon from '../images/menu.svg';
 import down from '../images/touch_down.svg';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.header`
   position: sticky;
   top: 0;
   z-index: 2;
