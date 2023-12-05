@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ecosolution/static/css/main.c21070c7.css",
-    "main.js": "/ecosolution/static/js/main.506ab328.js",
+    "main.js": "/ecosolution/static/js/main.1b8e50ec.js",
     "static/media/hero_desktop.png": "/ecosolution/static/media/hero_desktop.762a1926813167dfb983.png",
     "static/media/hero_tablet.png": "/ecosolution/static/media/hero_tablet.a0dad29fb79b3bcefcfb.png",
     "static/media/FiraSans-Regular.ttf": "/ecosolution/static/media/FiraSans-Regular.f4eb295ecc2fb842d61c.ttf",
@@ -37,10 +37,10 @@
     "static/media/cross.svg": "/ecosolution/static/media/cross.2b82847fdc22d599e2ae09842fb73fb1.svg",
     "static/media/minus.svg": "/ecosolution/static/media/minus.06823d08b7149db9f2adc6371ef81ae6.svg",
     "main.c21070c7.css.map": "/ecosolution/static/css/main.c21070c7.css.map",
-    "main.506ab328.js.map": "/ecosolution/static/js/main.506ab328.js.map"
+    "main.1b8e50ec.js.map": "/ecosolution/static/js/main.1b8e50ec.js.map"
   },
   "entrypoints": [
     "static/css/main.c21070c7.css",
-    "static/js/main.506ab328.js"
+    "static/js/main.1b8e50ec.js"
   ]
 }
