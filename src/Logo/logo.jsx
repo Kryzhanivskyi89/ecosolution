@@ -4,7 +4,9 @@ const Logo = () => {
   return (
     <>
       <LogoWrapper>
-        <LogoImage />
+        <a href="./index.html">
+          <LogoImage />
+        </a>
       </LogoWrapper>
     </>
   );

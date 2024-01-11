@@ -4,6 +4,7 @@ import {
   Wrapper,
   FooterSocialWrapper,
   FooterLogoSocialWrapper,
+  SocialLink,
   Facebook,
   Instagram,
   Up,
@@ -28,8 +29,21 @@ const Footer = () => {
         <FooterLogoSocialWrapper>
           <Logo />
           <FooterSocialWrapper>
-            <Facebook />
-            <Instagram />
+            <SocialLink
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Facebook />
+            </SocialLink>
+            <SocialLink
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Instagram />
+            </SocialLink>
+            
           </FooterSocialWrapper>
           <FooterButton onClick={scrollToTop}>
             <Up />

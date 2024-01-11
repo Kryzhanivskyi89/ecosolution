@@ -64,13 +64,15 @@ const Contacts = () => {
                     <ContactSocialTitle>Social Networks:</ContactSocialTitle>
                         <ContactSocialLinkWrapper>
                             <ContactSocialLink 
-                                href=""
+                                href="https://www.facebook.com/"
+                                target="_blank"
                                 rel="noopener noreferrer nofollow">
                                 <Facebook/>
                             </ContactSocialLink>
                             
                             <ContactSocialLink 
-                                href=""
+                                href="https://www.instagram.com/"
+                                target="_blank"
                                 rel="noopener noreferrer nofollow">
                                 <Instagram/>
                             </ContactSocialLink>

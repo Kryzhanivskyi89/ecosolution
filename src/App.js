@@ -11,18 +11,24 @@ import Footer from './Footer/footer';
 function App() {
   return (
     <>
-      <div className="container">
+      <header>
         <Header />
-        <main>
-          <Hero />
-          <Values />
-          <Electricity />
-          <Cases />
-          <Faq/>
-          <ContactUs />
-        </main>
-        <Footer />
-      </div>
+      </header>
+      <main>
+        <div className="container">
+            <Hero />
+            <Values />
+            <Electricity />
+            <Cases />
+            <Faq/>
+            <ContactUs />
+        </div>
+      </main>
+      <footer>
+        <div className="container">
+          <Footer />
+        </div>
+      </footer>
     </>
   );
 }

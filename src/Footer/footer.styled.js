@@ -59,6 +59,15 @@ export const FooterLogoSocialWrapper = styled.div`
     }
 `;
 
+export const SocialLink = styled.a`
+    color: var(--white);
+    transition: 0.4s ease;
+    &:hover {
+        color: var(--main-green);
+        transition: 0.4s ease;
+    }
+`;
+
 export const Facebook = styled(ReactSVG).attrs({
   src: facebook,
 })`

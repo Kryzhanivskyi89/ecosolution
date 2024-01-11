@@ -3,10 +3,11 @@ import { ReactSVG } from 'react-svg';
 import buttonIcon from '../images/menu.svg';
 import down from '../images/touch_down.svg';
 
-export const Wrapper = styled.header`
-  position: sticky;
+export const Wrapper = styled.div`
+  position: fixed;
   top: 0;
   z-index: 2;
+  width: 100vw;
 `;
 
 export const HeaderWrapper = styled.div`
@@ -15,13 +16,18 @@ export const HeaderWrapper = styled.div`
   align-items: center;
   top: 0;
   height: 40px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
-  background-color: var(--main-bg);
+  background-color: transparent;
     @media screen and (min-width: 768px) {
       height: 68px;
+      width: 708px;
     }
     @media screen and (min-width: 1280px) {
       padding: 0;
+      width: 1240px;
     }
 `;
 

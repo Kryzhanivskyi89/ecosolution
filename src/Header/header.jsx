@@ -12,24 +12,10 @@ import {
   McDonaldsMenuHidden,
 } from './header.styled';
 
-const scrollContactUs = () => {
-  const sectionId = 'contact';
-  const section = document.getElementById(sectionId);
 
-  if (section) {
-    const headerHeight = 70;
-    const sectionRect = section.getBoundingClientRect();
-
-    window.scrollTo({
-      top: sectionRect.top + window.scrollY - headerHeight,
-      left: 0,
-      duration: 500,
-      behavior: 'smooth',
-    });
-  }
-};
 
 const Header = () => {
+  const [isTransparent, setIsTransparent] = useState(true);
 
   const useOpenMcDonaldsMenu = ({ styles }) => {
     const [openMenu, setOpenMenu] = useState(false);
@@ -54,10 +40,42 @@ const Header = () => {
     setOpenMenu(false);
   };
 
+useEffect(() => {
+    const handleScrollEvent = () => {
+      setIsTransparent(window.scrollY === 0);
+    };
+
+    window.addEventListener('scroll', handleScrollEvent);
+
+    return () => {
+      window.removeEventListener('scroll', handleScrollEvent);
+    };
+  }, []);
+
+  const scrollContactUs = () => {
+  const sectionId = 'contact';
+  const section = document.getElementById(sectionId);
+
+  if (section) {
+    const headerHeight = 70;
+    const sectionRect = section.getBoundingClientRect();
+
+    window.scrollTo({
+      top: sectionRect.top + window.scrollY - headerHeight,
+      left: 0,
+      duration: 500,
+      behavior: 'smooth',
+    });
+    setIsTransparent(false);
+  }
+};
+
   return (
     <>
-      <Wrapper id="header">
-        <HeaderWrapper >
+      <Wrapper style={{
+          background: isTransparent ? 'transparent' : 'var(--white)',
+        }}>
+        <HeaderWrapper id="header">
           <Logo />
           <McDonaldsMenuButton onClick={openMenu ? closeModal : openModal}>
             <ButtonIcon />
