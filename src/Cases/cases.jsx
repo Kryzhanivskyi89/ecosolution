@@ -1,6 +1,6 @@
 import {Slider} from './Slider/slider'
 import {
-  Wrapper,
+  CasesWrapper,
   CasesHeader,
   CasesHeaderTitle,
   CasesHeaderLineVertical,
@@ -17,7 +17,7 @@ const Cases = () => {
 
   return (
     <>
-      <Wrapper id="cases">
+      <CasesWrapper id="cases">
         <CasesHeader>
             <CasesHeaderTitle>Successful cases of our company</CasesHeaderTitle>
             <CasesHeaderLineVertical />
@@ -40,7 +40,7 @@ const Cases = () => {
        
         <Slider />
         
-      </Wrapper>
+      </CasesWrapper>
     </>
   );
 };

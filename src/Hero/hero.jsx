@@ -1,6 +1,6 @@
 
 import {
-    Wrapper,
+    HeroWrapper,
     HeroInfo,
     HeroTitle,
     TitleText,
@@ -37,7 +37,7 @@ import {
 const Main = () => {
   return (
     <>
-      <Wrapper id='hero'>
+      <HeroWrapper id='hero'>
         <HeroInfo>
           <HeroTitle>
             <TitleText>renewable energy for any task</TitleText>
@@ -63,7 +63,7 @@ const Main = () => {
           <HeroLegasy>ecosolution © 2023</HeroLegasy>
         </HeroContacts>
         <HeroImage />
-      </Wrapper>
+      </HeroWrapper>
     </>
   );
 };

@@ -23,11 +23,9 @@ const formSchema = yup.object({
 const ContactsForm = () => {
 
   return (
-    <>
       <Formik validationSchema={formSchema}>
         <ContactForm>
            <ContactLabelWrapper>
-            
                 <ContactFormLabel htmlFor="name">
                     <ContactFormTitle>* Full name:</ContactFormTitle>
                         <ContactFormInput
@@ -37,7 +35,6 @@ const ContactsForm = () => {
                             placeholder="John Rosie"
                             required/>
                         <ErrorMessage name="name" component={FormError} />
-                        
                 </ContactFormLabel>
                 
                 <ContactFormLabel htmlFor="email">
@@ -48,8 +45,7 @@ const ContactsForm = () => {
                         name="email"
                         placeholder="johnrosie@gmail.com"
                         required/>
-                    <ErrorMessage name="email" component={FormError} />        
-                    
+                    <ErrorMessage name="email" component={FormError} />
                 </ContactFormLabel>
                 
                 <ContactFormLabel htmlFor="phone">
@@ -60,8 +56,7 @@ const ContactsForm = () => {
                         name="phone"
                         placeholder="380961234567"
                         required/>
-                    <ErrorMessage name="phone" component={FormError} />        
-                    
+                    <ErrorMessage name="phone" component={FormError} />
                 </ContactFormLabel>
                 
                 <ContactFormLabel>
@@ -81,7 +76,6 @@ const ContactsForm = () => {
             </ContactFormSubmit>
         </ContactForm>
       </Formik>
-    </>
   );
 };
 

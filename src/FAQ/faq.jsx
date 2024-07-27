@@ -32,32 +32,36 @@ const scrollContactUs = () => {
   };
 
 export function Faq() {
-    const [openId, setOpenId] = useState(faqData[0].id);
+    // const [openId, setOpenId] = useState(faqData[0].id);
 
-    function handleClick(id) {
-        if (id === openId) {
-            setOpenId(null);
-        } else {
-            setOpenId(id);
-        }
-    }
+    // function handleClick(id) {
+    //     if (id === openId) {
+    //         setOpenId(null);
+    //     } else {
+    //         setOpenId(id);
+    //     }
+    // }
+const [openIndex, setOpenIndex] = useState(0);
 
+  const handleToggle = index => {
+    setOpenIndex(prevIndex => (prevIndex === index ? -1 : index));
+  };
     return (
         <Wrapper name="FAQ" id='faq'>
             <div className="container">
                 <FaqWrapper>
                     <FaqTitlle>Frequently Asked Questions</FaqTitlle>
                     <FaqList>
-                        {faqData.map(faqItem => {
-                            return (
+                        {faqData.map((faqItem, index) =>  (
                                 <FAQItem
-                                    key={faqItem.id}
-                                    onClick={handleClick}
-                                    faqItem={faqItem}
-                                    isOpen={faqItem.id === openId}
+                                key={faqItem.id}
+                                // onClick={handleClick}
+                                // isOpen={faqItem.id === openId}
+                                faqItem={faqItem}
+                                onClick={() => handleToggle(index)}
+                                isOpen={openIndex === index}
                                 />
-                            );
-                        })}
+                        ))}
                     </FaqList>
                     <FaqSecondTitleWrapper>
                         <FaqSecondTitle>

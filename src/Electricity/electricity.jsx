@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import {
-    Wrapper,
+    ElectricityWrapper,
     ElectricityTitle,
     ElectricityLine,
     ElectricityTimer,
@@ -21,14 +21,14 @@ const Electricity = () => {
  
   return (
     <>
-      <Wrapper>
+      <ElectricityWrapper>
         <ElectricityTitle>Electricity we produced for all time</ElectricityTitle>
         <ElectricityLine />
         <ElectricityTimer>
           {timer}
           <ElectricityTimerText>kWh</ElectricityTimerText>
         </ElectricityTimer>
-      </Wrapper>
+      </ElectricityWrapper>
     </>
   );
 };

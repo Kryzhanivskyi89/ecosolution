@@ -11,33 +11,24 @@ import {
 } from './faq.styled';
 
 export function FAQItem({ faqItem, onClick, isOpen }) {
-    const faqAnswerRef = useRef(null);
-
-    const {id, question, answer } = faqItem;
+    
+const {question, answer } = faqItem;
 
     return (
         <FaqItem>
             <FaqButton
                 type="button"
-                onClick={() => onClick(id)}
+                aria-label="Toggle answer"
+                // onClick={() => onClick(id)}
+                onClick={onClick}
             >
                 <FaqIconWrapper>
                     {isOpen ? (<Minus />):(<Plus />)}
                 </FaqIconWrapper>
-                <FaqQuestions>{question}</FaqQuestions>
+                <FaqQuestions >{question}</FaqQuestions>
             </FaqButton>
-            <FaqDrop
-                style={
-                    isOpen
-                        ? { height: faqAnswerRef.current?.scrollHeight } 
-                        : { height: 0 }
-                }
-            >
-                <FaqAnswers ref={faqAnswerRef}>
-                    {answer}
-                </FaqAnswers>
             
-            </FaqDrop>
+            {isOpen && <FaqAnswers>{answer}</FaqAnswers>}
         </FaqItem>
     );
 }

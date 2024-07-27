@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
+export const ElectricityWrapper = styled.section`
     display: flex;
     flex-direction: column;
     gap: 24px;

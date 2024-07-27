@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { ReactSVG } from 'react-svg';
 import right from '../images/right.svg';
 
-export const Wrapper = styled.div`
+export const CasesWrapper = styled.section`
     width: 320px;
       @media screen and (min-width: 768px) {
         width: 709px;

@@ -45,7 +45,7 @@ const Footer = () => {
             </SocialLink>
             
           </FooterSocialWrapper>
-          <FooterButton onClick={scrollToTop}>
+          <FooterButton type='button' onClick={scrollToTop}>
             <Up />
           </FooterButton>
         </FooterLogoSocialWrapper>

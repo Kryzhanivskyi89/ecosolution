@@ -131,7 +131,7 @@ export const LinkWrapper = styled.div`
   }
 `;
 
-export const BuffetLink = styled.a`
+export const BuffetLink = styled.button`
     display: flex;
     gap: 8px;
     width: 100%;
@@ -144,7 +144,8 @@ export const BuffetLink = styled.a`
     transition: 0.4s ease;
     color: #fff;
     opacity: 0.25;
-        &:hover {
+        &:hover,
+        &:focus {
             transition: 0.4s ease;
             color: var(--main-green);
         }

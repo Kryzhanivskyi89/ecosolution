@@ -5,7 +5,7 @@ import hero_mobile from '../images/hero_mobile.png';
 import hero_tablet from '../images/hero_tablet.png';
 import hero_desktop from '../images/hero_desktop.png';
 
-export const Wrapper = styled.div`
+export const HeroWrapper = styled.section`
   margin: 0;
   margin-top: 146px;
   @media screen and (min-width: 768px) {

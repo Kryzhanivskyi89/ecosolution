@@ -9,7 +9,7 @@ import man_tab from '../images/values-man_tab.png';
 import men_desk from '../images/values-men_desk.png';
 import man_desk from '../images/values-man_desk.png';
 
-export const Wrapper = styled.div`
+export const ValueWrapper = styled.section`
   width: 320px;
   margin-bottom: 36px;
     @media screen and (min-width: 768px) {

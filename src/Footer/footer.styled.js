@@ -107,7 +107,8 @@ export const FooterButton = styled.button`
   border: none;
   border-radius: 100px;
   background: var(--main-green);
-    &:hover {
+    &:hover,
+    &:focus {
       background: var(--main-dark-green);
       ${Up} {
         stroke: var(--main-green);

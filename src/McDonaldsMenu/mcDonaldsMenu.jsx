@@ -65,7 +65,7 @@ const McDonaldsMenu = ({ onClose }) => {
               {links.map(({ name, link }) => {
                 return (
                   <LinkWrapper key={link}>
-                    <BuffetLink onClick={() => goToLink(link)}>
+                    <BuffetLink type="button" onClick={() => goToLink(link)}>
                       {`${name}`}
                       <Northerneast style={{ stroke: 'var(--white)' }} />
                     </BuffetLink>

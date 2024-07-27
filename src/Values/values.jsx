@@ -16,13 +16,13 @@ import {
   ValuesGrid,
   ValuesText,
   MainValueTitle,
-  Wrapper,
+  ValueWrapper,
 } from './values.styled';
 
 const Values = () => {
   return (
     <>
-      <Wrapper id='values'>
+      <ValueWrapper id='values'>
         <MainValues>
           <MainValueTitle>Main values of our company</MainValueTitle>
           <Rectangle />
@@ -78,7 +78,7 @@ const Values = () => {
             </ValuesGridText>
           </ValuesGridItem>
         </ValuesGrid>
-      </Wrapper>
+      </ValueWrapper>
     </>
   );
 };
