@@ -50,10 +50,13 @@ export const ContactSocialTitle = styled.h3`
 `;
 
 export const ContactSocialItemWrapper = styled.div`
-
+	&:hover,
+	&:focus {
+		color: var(--main-green);
+	}
 `;
 
-export const ContactLink = styled.p`
+export const ContactLink = styled.a`
     display: flex;
 	align-items: center;
 	gap: 8px;
@@ -66,6 +69,9 @@ export const ContactLink = styled.p`
 		&:hover,
 		&:focus {
 			color: var(--main-green);
+			transition-duration: 250ms;
+    		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		
 		}
 
 		@media screen and (min-width: 1280px) {
@@ -74,10 +80,10 @@ export const ContactLink = styled.p`
 		}
 `;
 
-export const IconWrapper = styled.div`
-    display: flex;
-	align-items: center;
-`;
+// export const IconWrapper = styled.div`
+//     display: flex;
+// 	align-items: center;
+// `;
 
 export const Phone = styled(ReactSVG).attrs({
   src: phone,
@@ -86,8 +92,11 @@ export const Phone = styled(ReactSVG).attrs({
 	height: 24px;
 	cursor: pointer;
 	stroke: var(--main-dark-green);
-		&:hover {
+		&:hover,
+		&:focus {
 			stroke: var(--main-green);
+			transition-duration: 250ms;
+    		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 		}
 `;
 
@@ -98,8 +107,12 @@ export const Email = styled(ReactSVG).attrs({
 	height: 24px;
 	cursor: pointer;
 	stroke: var(--main-dark-green);
-		&:hover {
+		&:hover,
+		&:focus {
 			stroke: var(--main-green);
+			transition-duration: 250ms;
+    		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		
 		}
 `;
 
@@ -110,8 +123,12 @@ export const Adres = styled(ReactSVG).attrs({
 	height: 24px;
 	cursor: pointer;
 	stroke: var(--main-dark-green);
-		&:hover {
+		&:hover,
+		&:focus {
 			stroke: var(--main-green);
+			transition-duration: 250ms;
+    		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		
 		}
 `;
 
@@ -135,16 +152,22 @@ export const Instagram = styled(ReactSVG).attrs({
 export const ContactSocialLink = styled.a`
     padding: 12px;
 	color: var(--main-dark-green);
+
 		&:hover,
 		&:focus {
 			color: var(--main-bg);
 			${Instagram} {
 				stroke: var(--main-green);
-			  }
+				transition-duration: 250ms;
+				transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+			}
 			${Facebook} {
         		stroke: var(--main-green);
-      		}
-		}
+				transition-duration: 250ms;
+				transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      		};
+		};
+
 		@media screen and (min-width: 1280px) {
 			padding: 0;
 		}

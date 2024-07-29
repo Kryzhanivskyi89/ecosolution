@@ -22,28 +22,31 @@ const Contacts = () => {
         
             <ContactSocialItem>
                 <ContactSocialTitle>Phone</ContactSocialTitle>
-                <ContactLink href="tel:+380981234567">
-                    <IconWrapper>
+                <ContactLink 
+                    href="tel:+380981234567"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow">
                         <Phone/>
-                    </IconWrapper>
-                    38 (098) 12 34 567
+                        38 (098) 12 34 567
                 </ContactLink>
                 
-                <ContactLink href="tel:+380981234567">
-                      <IconWrapper>
+                <ContactLink 
+                    href="tel:+380981234567"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow">
                         <Phone />
-                    </IconWrapper>
-                    38 (098) 12 34 567
+                        38 (098) 12 34 567
                 </ContactLink>
             </ContactSocialItem>
                 
                 <ContactSocialItem>
                     <ContactSocialTitle>E-mail:</ContactSocialTitle>
-                    <ContactLink href="mailto:office@ecosolution.com">
-                        <IconWrapper>
+                    <ContactLink 
+                        href="mailto:office@ecosolution.com"
+                        target="_blank"
+                        rel="noopener noreferrer nofollow">
                             <Email/>
-                        </IconWrapper>
-                        office@ecosolution.com
+                            office@ecosolution.com
                     </ContactLink>
                 </ContactSocialItem>
                 
@@ -53,10 +56,8 @@ const Contacts = () => {
                         href="https://maps.app.goo.gl/4wEMGGNfCrechPkS6"
                         target="_blank"
                         rel="noopener noreferrer nofollow">
-                        <IconWrapper>
                             <Adres/>
-                        </IconWrapper>
-                        79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
+                            79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
                     </ContactLink>
                 </ContactSocialItem>
                 

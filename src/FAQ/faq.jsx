@@ -53,14 +53,14 @@ const [openIndex, setOpenIndex] = useState(0);
                     <FaqTitlle>Frequently Asked Questions</FaqTitlle>
                     <FaqList>
                         {faqData.map((faqItem, index) =>  (
-                                <FAQItem
+                            <FAQItem
                                 key={faqItem.id}
                                 // onClick={handleClick}
                                 // isOpen={faqItem.id === openId}
                                 faqItem={faqItem}
                                 onClick={() => handleToggle(index)}
                                 isOpen={openIndex === index}
-                                />
+                            />
                         ))}
                     </FaqList>
                     <FaqSecondTitleWrapper>
@@ -68,7 +68,9 @@ const [openIndex, setOpenIndex] = useState(0);
                             Didn't find the answer to your question?
                         </FaqSecondTitle>
                         <FaqLinkWrapper>
-                            <FaqLink onClick={scrollContactUs}>
+                            <FaqLink
+                                type='button'
+                                onClick={scrollContactUs}>
                                 Contact Us
                                 <FaqIconWrapper>
                                     <Down />

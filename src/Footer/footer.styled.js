@@ -62,10 +62,6 @@ export const FooterLogoSocialWrapper = styled.div`
 export const SocialLink = styled.a`
     color: var(--white);
     transition: 0.4s ease;
-    &:hover {
-        color: var(--main-green);
-        transition: 0.4s ease;
-    }
 `;
 
 export const Facebook = styled(ReactSVG).attrs({
@@ -75,8 +71,11 @@ export const Facebook = styled(ReactSVG).attrs({
   height: 24px;
   cursor: pointer;
   stroke: var(--main-dark-green);
-    &:hover{
+    &:hover,
+    &:focus {
       stroke: var(--main-green);
+      transition-duration: 250ms;
+    	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 `;
 
@@ -87,8 +86,11 @@ export const Instagram = styled(ReactSVG).attrs({
   height: 24px;
   cursor: pointer;
   stroke: var(--main-dark-green);
-    &:hover{
-      stroke: var(--main-green)
+    &:hover,
+    &:focus {
+      stroke: var(--main-green);
+      transition-duration: 250ms;
+    	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 `;
 
@@ -107,13 +109,16 @@ export const FooterButton = styled.button`
   border: none;
   border-radius: 100px;
   background: var(--main-green);
+  
     &:hover,
     &:focus {
       background: var(--main-dark-green);
       ${Up} {
         stroke: var(--main-green);
         fill: var(--main-dark-green);
-      }
+      };
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 `;
 
@@ -146,4 +151,20 @@ export const FooterContacts = styled.p`
   line-height: normal;
   letter-spacing: -0.64px;
   color: var(--main-dark-green);
+`;
+
+export const FooterEmail = styled.a`
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  color: var(--main-dark-green);
+    &:hover,
+    &:focus {
+      color: var(--main-green);
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 `;

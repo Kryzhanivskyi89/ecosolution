@@ -105,7 +105,9 @@ export const ContactFormSubmit = styled.button`
         &:hover,
         &:focus {
             color: var(--main-green);
-            background: var(--main-dark-green)
+            background: var(--main-dark-green);
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
 `;
 	

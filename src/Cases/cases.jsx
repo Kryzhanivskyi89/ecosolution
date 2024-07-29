@@ -16,32 +16,35 @@ import {
 const Cases = () => {
 
   return (
-    <>
-      <CasesWrapper id="cases">
-        <CasesHeader>
-            <CasesHeaderTitle>Successful cases of our company</CasesHeaderTitle>
-            <CasesHeaderLineVertical />
-                <CasesHeaderWrapper>
-                  
-                        <CasesHeaderNumberTotal className={` pagination`}>
-                        </CasesHeaderNumberTotal>
+    <CasesWrapper id="cases">
+      <CasesHeader>
+        <CasesHeaderTitle>Successful cases of our company</CasesHeaderTitle>
+        <CasesHeaderLineVertical />
+          <CasesHeaderWrapper>
+            <CasesHeaderNumberTotal className={` pagination`}>
+            </CasesHeaderNumberTotal>
                         
-                  <CasesButtonsWrapper>
-                      <CasesHeaderButtonRight className={`prev`}>
-                        <Right rotateright="true" />
-                      </CasesHeaderButtonRight>
-                      <CasesHeaderButtonLeft className={`next`}>
-                        <Right />
-                      </CasesHeaderButtonLeft>
-                  </CasesButtonsWrapper>
+            <CasesButtonsWrapper>
+            <CasesHeaderButtonRight
+              type='button'
+              className={`prev`}>
+                <Right rotateright="true" />
+              </CasesHeaderButtonRight>
+              
+            <CasesHeaderButtonLeft
+              type='button'
+              className={`next`}>
+                <Right />
+              </CasesHeaderButtonLeft>
+            </CasesButtonsWrapper>
                   
-                </CasesHeaderWrapper>
-        </CasesHeader>
-       
-        <Slider />
+          </CasesHeaderWrapper>
+      </CasesHeader>
+
+      <Slider />
         
-      </CasesWrapper>
-    </>
+    </CasesWrapper>
+    
   );
 };
 

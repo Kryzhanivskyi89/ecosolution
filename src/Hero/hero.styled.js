@@ -110,11 +110,14 @@ export const ButtonLearnMore = styled.button`
     border-radius: 500px;
     border: 1px solid var(--main-green);
     background-color: var(--main-bg-clr);
-        &:hover {
-            background: var(--main-dark-green);
-            ${TextLearnMore} {
-            color: var(--main-green);
-            }
+      &:hover,
+      &:focus {
+        background: var(--main-dark-green);
+        ${TextLearnMore} {
+          color: var(--main-green);
+        };
+        transition-duration: 250ms;
+				transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 `;
 
@@ -175,6 +178,12 @@ export const HeroMail = styled.a`
   line-height: normal;
   color: var(--main-dark-green);
   letter-spacing: -0.64px;
+    &:hover,
+    &:focus {
+    color: var(--main-green);
+      transition-duration: 250ms;
+			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
     @media screen and (min-width: 768px) {
         margin-left: auto;
     }

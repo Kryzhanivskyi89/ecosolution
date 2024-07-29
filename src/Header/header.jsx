@@ -74,25 +74,29 @@ useEffect(() => {
     <>
       <Wrapper style={{
           background: isTransparent ? 'transparent' : 'var(--white)',
-        }}>
+      }}>
         <HeaderWrapper id="header">
           <Logo />
-          <McDonaldsMenuButton onClick={openMenu ? closeModal : openModal}>
+          <McDonaldsMenuButton
+            type='button'
+            onClick={openMenu ? closeModal : openModal}>
             <ButtonIcon />
           </McDonaldsMenuButton>
-          <ButtonTouch onClick={scrollContactUs}>
+          <ButtonTouch
+            type='button'
+            onClick={scrollContactUs}>
             <TouchText>Get in touch</TouchText>
             <TouchDown />
           </ButtonTouch>
         </HeaderWrapper>
       </Wrapper>
       {openMenu && (
-          <div id="modal">
-            <McDonaldsMenuHidden className={openMenu ? 'modal-open' : ''}>
-              <McDonaldsMenu onClose={closeModal}/>
-            </McDonaldsMenuHidden>
-          </div>
-        )}
+        <div id="modal">
+          <McDonaldsMenuHidden className={openMenu ? 'modal-open' : ''}>
+            <McDonaldsMenu onClose={closeModal}/>
+          </McDonaldsMenuHidden>
+        </div>
+      )}
     </>
   );
 };

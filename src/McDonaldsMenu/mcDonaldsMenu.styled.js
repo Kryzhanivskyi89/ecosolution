@@ -62,13 +62,7 @@ export const McDonaldsMenuCloseWrapper = styled.div`
   width: 60px;
   height: 20px;
   margin-bottom: 8px;
-    &:hover {
-      color: var(--main-green);
-      svg {
-        stroke: var(--main-green);
-      }
-    }
-  }
+    
 `;
 
 export const CloseButton = styled.button`
@@ -78,6 +72,16 @@ export const CloseButton = styled.button`
   height: 20px;
   background: transparent;
   border: none;
+    &:hover,
+    &:focus {
+        color: var(--main-green);
+        svg {
+          stroke: var(--main-green);
+        };
+        transition-duration: 250ms;
+    		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      };
+    };
 `;
 
 export const CloseButtonParagraph = styled.p`
@@ -89,6 +93,16 @@ export const CloseButtonParagraph = styled.p`
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.64px;
+    &:hover,
+    &:focus {
+        color: var(--main-green);
+        svg {
+          stroke: var(--main-green);
+        };
+        transition-duration: 250ms;
+    		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      };
+    };
 `;
 
 export const Close = styled(ReactSVG).attrs({

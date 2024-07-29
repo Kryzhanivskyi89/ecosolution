@@ -11,6 +11,7 @@ import {
   FooterButton,
   FooterContactWrapper,
   FooterContacts,
+  FooterEmail,
 } from './footer.styled';
 
 const scrollToTop = () => {
@@ -29,6 +30,7 @@ const Footer = () => {
         <FooterLogoSocialWrapper>
           <Logo />
           <FooterSocialWrapper>
+
             <SocialLink
               href="https://www.facebook.com/"
               target="_blank"
@@ -36,6 +38,7 @@ const Footer = () => {
             >
               <Facebook />
             </SocialLink>
+
             <SocialLink
               href="https://www.instagram.com/"
               target="_blank"
@@ -53,7 +56,12 @@ const Footer = () => {
           <FooterContacts>
             79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
           </FooterContacts>
-          <FooterContacts>office@ecosolution.com</FooterContacts>
+          <FooterEmail
+            href="office@ecosolution.com"
+            target="_blank"
+            rel="noopener noreferrer">
+              office@ecosolution.com
+          </FooterEmail>
           <FooterContacts>ecosolution © 2023</FooterContacts>
         </FooterContactWrapper>
       </Wrapper>

@@ -43,9 +43,12 @@ export const McDonaldsMenuButton = styled.button`
   cursor: pointer;
   background: var(--second-light-green);
   transition: background 0.3s ease;
-  &:hover {
-    background-color: var(--main-green);
-  }
+    &:hover,
+    &:focus {
+      background-color: var(--main-green);
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 `;
 
 export const ButtonIcon = styled.img`
@@ -85,12 +88,6 @@ export const TouchDown = styled(ReactSVG).attrs({
 `;
 
 export const ButtonTouch = styled.button`
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -102,20 +99,30 @@ export const ButtonTouch = styled.button`
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  &:hover {
-    background: var(--main-dark-green);
-    ${TouchText} {
-      color: var(--main-green);
-    }
-    ${TouchDown} {
-      circle {
-        fill: var(--main-green);
+    &:hover,
+    &:focus {
+      background: var(--main-dark-green);
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      ${TouchText} {
+        color: var(--main-green);
       }
-      path {
-        stroke: var(--main-dark-green);
+      ${TouchDown} {
+        circle {
+          fill: var(--main-green);
+        }
+        path {
+          stroke: var(--main-dark-green);
+        }
       }
+    };
+
+    @media screen and (max-width: 768px) {
+      display: none;
     }
-  }
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
 `;
 
 export const McDonaldsMenuHidden = styled.div`

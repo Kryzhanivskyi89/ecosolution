@@ -3,25 +3,25 @@ import { ReactSVG } from 'react-svg';
 import right from '../images/right.svg';
 
 export const CasesWrapper = styled.section`
-    width: 320px;
-      @media screen and (min-width: 768px) {
-        width: 709px;
-      }
-      @media screen and (min-width: 1280px) {
-        width: 1240px;
-      }
+  width: 320px;
+    @media screen and (min-width: 768px) {
+      width: 709px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 1240px;
+    }
 `;
 
 export const CasesHeader = styled.div`
-    margin-bottom: 19px;
-      @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 38px;
-      }
-      @media screen and (min-width: 1280px) {
-        margin-bottom: 120px;
-      }
+  margin-bottom: 19px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 38px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 120px;
+    }
 `;
 
 export const CasesHeaderTitle = styled.h2`
@@ -48,17 +48,17 @@ export const CasesHeaderTitle = styled.h2`
 `;
 
 export const CasesHeaderLineVertical = styled.div`
-    display: none;
-      @media screen and (min-width: 768px) {
-        display: block;
-        flex-shrink: 0;
-        width: 1px;
-        height: 65px;
-        background: var(--main-green);
-      }
-      @media screen and (min-width: 1280px) {
-        height: 96px;
-      }
+  display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+      flex-shrink: 0;
+      width: 1px;
+      height: 65px;
+      background: var(--main-green);
+    }
+    @media screen and (min-width: 1280px) {
+      height: 96px;
+    }
 `;
 
 export const CasesHeaderWrapper = styled.div`
@@ -81,17 +81,17 @@ export const CasesHeaderNumberTotal = styled.div`
 	font-size: 28px;
 	font-weight: 300;
 	letter-spacing: -1.12px;
-      span {
-	color: rgba(23, 61, 51, 0.25);
-}
+    span {
+	    color: rgba(23, 61, 51, 0.25);
+    }
 `;
 
 export const CasesButtonsWrapper = styled.div`
-    display: flex;
-    gap: 12px;
-      @media screen and (min-width: $desktop) {
-        gap: 24px;
-      }
+  display: flex;
+  gap: 12px;
+    @media screen and (min-width: $desktop) {
+      gap: 24px;
+    }
 `;
 
 export const Right = styled(ReactSVG).attrs({
@@ -119,10 +119,13 @@ export const CasesHeaderButtonLeft = styled.button`
   border-radius: 100px;
   border: 1px solid var(--main-dark-green);
   color: var(--main-dark-green);
-    &:hover {
+    &:hover,
+    &:focus {
       border: 1px solid var(--main-green);
-      ${Right} {
-        // stroke: var(--main-green);
+      ${Right} path {
+        stroke: var(--main-green);
+        transition-duration: 250ms;
+				transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       }
     }
     @media screen and (min-width: 1280px) {
@@ -141,10 +144,13 @@ export const CasesHeaderButtonRight = styled.button`
   border-radius: 100px;
   border: 1px solid var(--main-dark-green);
   background: var(--main-bg);
-    &:hover {
+    &:hover,
+    &:focus {
       border: 1px solid var(--main-green);
-      ${Right} {
-        // stroke: var(--main-green);
+      ${Right} path {
+        stroke: var(--main-green);
+        transition-duration: 250ms;
+				transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       }
     }
     @media screen and (min-width: 1280px) {
@@ -247,11 +253,14 @@ export const SliderItemsDescriptionButton = styled.button`
   border-radius: 100px;
   transform-origin: center;
   background: var(--main-green);
-    &:hover {
+    &:hover,
+    &:focus {
       background: var(--main-dark-green);
-      ${Right} {
-        stroke: var(--main-dark-green);
+      ${Right} path {
+        stroke: var(--main-green);
       }
+      transition-duration: 250ms;
+			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 `;
 
