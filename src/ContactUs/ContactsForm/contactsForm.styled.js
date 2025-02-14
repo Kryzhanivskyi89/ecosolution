@@ -59,15 +59,12 @@ export const ContactFormInput = styled.input`
         }
 `;
 
-export const FormError = styled.input`
-//   position: absolute;
-//   top: 32px;
-//   right: 8px;
-//   font-size: 8px;
-  border-color: red;
-	@media screen and (min-width: 768px) {
-		font-size: 12px;
-	}
+export const FormError = styled.span`
+    color: #d28b8b;
+    text-align: end;
+    font-family: var(--main-font);
+    font-size: 12px;
+    letter-spacing: -0.48px;
 `;
 
 export const ContactFormText = styled.textarea`

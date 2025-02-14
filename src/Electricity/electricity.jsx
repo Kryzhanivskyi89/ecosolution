@@ -18,6 +18,10 @@ const Electricity = () => {
 
     return () => clearInterval(intervalId);
   }, []);
+
+  const lastThreeDigitsString = (timer % 1000)
+    .toString()
+    .padStart(3, '0');
  
   return (
     <>
@@ -25,7 +29,7 @@ const Electricity = () => {
         <ElectricityTitle>Electricity we produced for all time</ElectricityTitle>
         <ElectricityLine />
         <ElectricityTimer>
-          {timer}
+          1.134.147.{lastThreeDigitsString}
           <ElectricityTimerText>kWh</ElectricityTimerText>
         </ElectricityTimer>
       </ElectricityWrapper>
