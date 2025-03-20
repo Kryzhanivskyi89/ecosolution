@@ -64,7 +64,7 @@ export function Slider() {
                             <SliderItemsInfo>
                             <SliderItemsDescription>
                                 <SliderItemsDescriptionTitle>{title}</SliderItemsDescriptionTitle>
-                                <SliderItemsDescriptionButton type='button'>
+                                <SliderItemsDescriptionButton type='button' aria-label="See more">
                                     <Right rotateupleft="true" scale={0.77} />
                                 </SliderItemsDescriptionButton>
                             </SliderItemsDescription>

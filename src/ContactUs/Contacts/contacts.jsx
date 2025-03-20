@@ -4,7 +4,6 @@ import {
     ContactSocialItem,
     ContactSocialTitle,
     ContactLink,
-    IconWrapper,
     Phone,
     Email,
     Adres,
@@ -39,47 +38,50 @@ const Contacts = () => {
                 </ContactLink>
             </ContactSocialItem>
                 
-                <ContactSocialItem>
-                    <ContactSocialTitle>E-mail:</ContactSocialTitle>
-                    <ContactLink 
-                        href="mailto:office@ecosolution.com"
-                        target="_blank"
-                        rel="noopener noreferrer nofollow">
-                            <Email/>
-                            office@ecosolution.com
-                    </ContactLink>
-                </ContactSocialItem>
+            <ContactSocialItem>
+                <ContactSocialTitle>E-mail:</ContactSocialTitle>
+                <ContactLink 
+                    href="mailto:office@ecosolution.com"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow">
+                        <Email/>
+                        office@ecosolution.com
+                </ContactLink>
+            </ContactSocialItem>
                 
-                <ContactSocialItem>
-                    <ContactSocialTitle>Address:</ContactSocialTitle>
-                    <ContactLink 
-                        href="https://maps.app.goo.gl/4wEMGGNfCrechPkS6"
-                        target="_blank"
-                        rel="noopener noreferrer nofollow">
-                            <Adres/>
-                            79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
-                    </ContactLink>
-                </ContactSocialItem>
+            <ContactSocialItem>
+                <ContactSocialTitle>Address:</ContactSocialTitle>
+                <ContactLink 
+                    href="https://maps.app.goo.gl/4wEMGGNfCrechPkS6"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow">
+                        <Adres/>
+                        79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
+                </ContactLink>
+            </ContactSocialItem>
                 
-                <ContactSocialItem>
-                    <ContactSocialTitle>Social Networks:</ContactSocialTitle>
-                        <ContactSocialLinkWrapper>
-                            <ContactSocialLink 
-                                href="https://www.facebook.com/"
-                                target="_blank"
-                                rel="noopener noreferrer nofollow">
-                                <Facebook/>
-                            </ContactSocialLink>
+            <ContactSocialItem>
+                <ContactSocialTitle>Social Networks:</ContactSocialTitle>
+                <ContactSocialLinkWrapper>
+                    
+                    <ContactSocialLink 
+                        href="https://www.facebook.com/"
+                        target="_blank"
+                        aria-label="Visit our Facebook page"
+                        rel="noopener noreferrer nofollow">
+                        <Facebook/>
+                    </ContactSocialLink>
                             
-                            <ContactSocialLink 
-                                href="https://www.instagram.com/"
-                                target="_blank"
-                                rel="noopener noreferrer nofollow">
-                                <Instagram/>
-                            </ContactSocialLink>
+                    <ContactSocialLink 
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                        aria-label="Visit our Instagram profile"
+                        rel="noopener noreferrer nofollow">
+                        <Instagram/>
+                    </ContactSocialLink>
                             
-                        </ContactSocialLinkWrapper>
-                </ContactSocialItem>
+                </ContactSocialLinkWrapper>
+            </ContactSocialItem>
                 
         </ContactSocialList>    
     </>

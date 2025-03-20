@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+
 import {
     FaqItem,
     FaqButton,
@@ -6,7 +6,6 @@ import {
     Minus,
     Plus,
     FaqQuestions,
-    FaqDrop,
     FaqAnswers,
 } from './faq.styled';
 
@@ -19,7 +18,6 @@ const {question, answer } = faqItem;
             <FaqButton
                 type="button"
                 aria-label="Toggle answer"
-                // onClick={() => onClick(id)}
                 onClick={onClick}
             >
                 <FaqIconWrapper>

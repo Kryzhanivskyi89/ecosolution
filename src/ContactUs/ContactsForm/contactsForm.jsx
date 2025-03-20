@@ -80,65 +80,65 @@ const ContactsForm = () => {
     }
   };
     return (
-        <ContactForm onSubmit={handleSubmit}>
-           <ContactLabelWrapper>
-                <ContactFormLabel htmlFor="name">
-                    <ContactFormTitle>* Full name:</ContactFormTitle>
-                    <ContactFormInput
-                        id="name"
-                        type="text"
-                        name="name"
-                        placeholder="John Rosie"
-                        value={name}
-                        onChange={handleChange}
-                    />
-                    {errors.name && < FormError> {errors.name} </FormError>}
-                </ContactFormLabel>
-                
-                <ContactFormLabel htmlFor="email">
-                    <ContactFormTitle>* E-mail:</ContactFormTitle>
-                    <ContactFormInput
-                        id="email"
-                        type="email"
-                        name="email"
-                        placeholder="johnrosie@gmail.com"
-                        value={email}
-                        onChange={handleChange}
-                    />
-                    {errors.email && < FormError> {errors.email} </FormError>}
-                </ContactFormLabel>
-                
-                <ContactFormLabel htmlFor="phone">
-                    <ContactFormTitle>* Phone:</ContactFormTitle>
-                    <ContactFormInput
-                        id="phone"
-                        type="phone"
-                        name="phone"
-                        placeholder="380961234567"
-                        value={phone}
-                        onChange={handleChange}
-                    />
-                    {errors.phone && < FormError> {errors.phone} </FormError>}
-                </ContactFormLabel>
-                
-                <ContactFormLabel>
-                    <ContactFormTitle>Message:</ContactFormTitle>
-                    <ContactFormText
-                        type="text"
-                        name="message"
-                        placeholder="Your message"
-                        value={message}
-                        onChange={handleChange}/>
-                </ContactFormLabel>
+      <ContactForm onSubmit={handleSubmit}>
+        <ContactLabelWrapper>
 
-            </ContactLabelWrapper>
-                <ContactFormSubmit type="submit">
-                    Send
-                {/* <ContactSubmitIconWrapper> */}
-                    <Right/>
-                {/* </ContactSubmitIconWrapper> */}
-            </ContactFormSubmit>
-        </ContactForm>
+          <ContactFormLabel htmlFor="name">
+            <ContactFormTitle>* Full name:</ContactFormTitle>
+            <ContactFormInput
+              id="name"
+              type="text"
+              name="name"
+              placeholder="John Rosie"
+              value={name}
+              onChange={handleChange}
+            />
+            {errors.name && < FormError> {errors.name} </FormError>}
+          </ContactFormLabel>
+                
+          <ContactFormLabel htmlFor="email">
+            <ContactFormTitle>* E-mail:</ContactFormTitle>
+            <ContactFormInput
+              id="email"
+              type="email"
+              name="email"
+              placeholder="johnrosie@gmail.com"
+              value={email}
+              onChange={handleChange}
+            />
+            {errors.email && < FormError> {errors.email} </FormError>}
+          </ContactFormLabel>
+                
+          <ContactFormLabel htmlFor="phone">
+            <ContactFormTitle>* Phone:</ContactFormTitle>
+              <ContactFormInput
+                id="phone"
+                type="phone"
+                name="phone"
+                placeholder="380961234567"
+                value={phone}
+                onChange={handleChange}
+              />
+              {errors.phone && < FormError> {errors.phone} </FormError>}
+          </ContactFormLabel>
+                
+          <ContactFormLabel>
+            <ContactFormTitle>Message:</ContactFormTitle>
+            <ContactFormText
+              type="text"
+              name="message"
+              placeholder="Your message"
+              value={message}
+              onChange={handleChange}/>
+          </ContactFormLabel>
+
+        </ContactLabelWrapper>
+
+        <ContactFormSubmit type="submit">
+          Send <Right/>
+        </ContactFormSubmit>
+        
+      </ContactForm>
     );
 };
 

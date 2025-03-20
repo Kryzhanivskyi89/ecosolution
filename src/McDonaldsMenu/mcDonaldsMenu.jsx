@@ -51,47 +51,49 @@ const McDonaldsMenu = ({ onClose }) => {
       <Wrapper>
         <McDonaldsMenuWrapper>
 
-        <McDonaldsMenuCloseWrapper >
-          <CloseButton type="button" onClick={onClose}>
-            <Close />
-            <CloseButtonParagraph>close</CloseButtonParagraph>
-          </CloseButton>
-        </McDonaldsMenuCloseWrapper>
-        <McDonaldsMenuLine/>
+          <McDonaldsMenuCloseWrapper >
+            <CloseButton type="button" onClick={onClose} aria-label="button for closing menu">
+              <Close />
+              <CloseButtonParagraph>close</CloseButtonParagraph>
+            </CloseButton>
+          </McDonaldsMenuCloseWrapper>
 
-        <BuffetContainer>
-          <BuffetList  >
+          <McDonaldsMenuLine/>
 
-              {links.map(({ name, link }) => {
-                return (
-                  <LinkWrapper key={link}>
-                    <BuffetLink type="button" onClick={() => goToLink(link)}>
-                      {`${name}`}
-                      <Northerneast style={{ stroke: 'var(--white)' }} />
-                    </BuffetLink>
-                  </LinkWrapper>
-                );
-              })}
+          <BuffetContainer>
+            <BuffetList  >
+                {links.map(({ name, link }) => {
+                  return (
+                    <LinkWrapper key={link}>
+                      <BuffetLink type="button" onClick={() => goToLink(link)}>
+                        {`${name}`}
+                        <Northerneast style={{ stroke: 'var(--white)' }} />
+                      </BuffetLink>
+                    </LinkWrapper>
+                  );
+                })}
+            </BuffetList>
+          </BuffetContainer>
 
-          </BuffetList>
-        </BuffetContainer>
+          <SocialContainer>
+            <SocialLink
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Instagram />
+            </SocialLink>
 
-        <SocialContainer>
-          <SocialLink
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Instagram />
-          </SocialLink>
-          <SocialLink
-            href="https://www.facebook.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Facebook />
-          </SocialLink>
-        </SocialContainer>
+            <SocialLink
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Facebook />
+            </SocialLink>
+
+          </SocialContainer>
+
         </McDonaldsMenuWrapper>
       </Wrapper>
     </WrapperBackdrop>

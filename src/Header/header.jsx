@@ -76,27 +76,36 @@ useEffect(() => {
           background: isTransparent ? 'transparent' : 'var(--white)',
       }}>
         <HeaderWrapper id="header">
+          
           <Logo />
+
           <McDonaldsMenuButton
             type='button'
             onClick={openMenu ? closeModal : openModal}>
-            <ButtonIcon />
+            <ButtonIcon 
+              alt="button for opening menu"
+              aria-label="button for opening menu"/>
           </McDonaldsMenuButton>
+
           <ButtonTouch
             type='button'
             onClick={scrollContactUs}>
             <TouchText>Get in touch</TouchText>
             <TouchDown />
           </ButtonTouch>
+
         </HeaderWrapper>
+
       </Wrapper>
+
       {openMenu && (
         <div id="modal">
           <McDonaldsMenuHidden className={openMenu ? 'modal-open' : ''}>
-            <McDonaldsMenu onClose={closeModal}/>
+            <McDonaldsMenu onClose={closeModal} />
           </McDonaldsMenuHidden>
         </div>
       )}
+
     </>
   );
 };

@@ -27,12 +27,14 @@ const Cases = () => {
             <CasesButtonsWrapper>
             <CasesHeaderButtonRight
               type='button'
+              aria-label="Previous slide"
               className={`prev`}>
                 <Right rotateright="true" />
               </CasesHeaderButtonRight>
               
             <CasesHeaderButtonLeft
               type='button'
+              aria-label="Next slide"
               className={`next`}>
                 <Right />
               </CasesHeaderButtonLeft>

@@ -1,4 +1,4 @@
-// import { ValuesLine } from 'utils/line.styled';
+
 import {
   ValueImageMen,
   ValueImageMan,
@@ -34,18 +34,21 @@ const Values = () => {
             meet the world's energy needs.
           </ValuesText>
         </MainValues>
+
         <ValuesGrid>
+
           <ValuesGridItem>
             <ValuesGridContainer>
-              <Openness />
+              <Openness alt="maximize circle"/>
               <ValuesGridTitle>Openness</ValuesGridTitle>
             </ValuesGridContainer>
             <ValuesLine />
             <ValuesGridText>to the world, people, new ideas and projects</ValuesGridText>
           </ValuesGridItem>
+          
           <ValuesGridItem>
             <ValuesGridContainer>
-              <Responsibility />
+              <Responsibility alt="global edit"/>
               <ValuesGridTitle>Responsibility</ValuesGridTitle>
             </ValuesGridContainer>
             <ValuesLine />
@@ -54,11 +57,13 @@ const Values = () => {
               lives and the lives of future generations
             </ValuesGridText>
           </ValuesGridItem>
-          <ValueImageMen />
-          <ValueImageMan />
+
+          <ValueImageMen alt="wind farms fields"/>
+          <ValueImageMan alt="wind farms fields" />
+
           <ValuesGridItem>
             <ValuesGridContainer>
-              <Innovation />
+              <Innovation alt="cpu charge"/>
               <ValuesGridTitle>Innovation</ValuesGridTitle>
             </ValuesGridContainer>
             <ValuesLine />
@@ -66,9 +71,10 @@ const Values = () => {
               we use the latest technology to implement non-standard solutions
             </ValuesGridText>
           </ValuesGridItem>
+
           <ValuesGridItem>
             <ValuesGridContainer>
-              <Quality />
+              <Quality alt="ranking"/>
               <ValuesGridTitle>Quality</ValuesGridTitle>
             </ValuesGridContainer>
             <ValuesLine />
@@ -77,7 +83,9 @@ const Values = () => {
               the best in our business
             </ValuesGridText>
           </ValuesGridItem>
+          
         </ValuesGrid>
+        
       </ValueWrapper>
     </>
   );

@@ -32,20 +32,13 @@ const scrollContactUs = () => {
   };
 
 export function Faq() {
-    // const [openId, setOpenId] = useState(faqData[0].id);
-
-    // function handleClick(id) {
-    //     if (id === openId) {
-    //         setOpenId(null);
-    //     } else {
-    //         setOpenId(id);
-    //     }
-    // }
+    
 const [openIndex, setOpenIndex] = useState(0);
 
   const handleToggle = index => {
     setOpenIndex(prevIndex => (prevIndex === index ? -1 : index));
   };
+  
     return (
         <Wrapper name="FAQ" id='faq'>
             <div className="container">
@@ -55,9 +48,8 @@ const [openIndex, setOpenIndex] = useState(0);
                         {faqData.map((faqItem, index) =>  (
                             <FAQItem
                                 key={faqItem.id}
-                                // onClick={handleClick}
-                                // isOpen={faqItem.id === openId}
                                 faqItem={faqItem}
+                                aria-label="Toggle answer"
                                 onClick={() => handleToggle(index)}
                                 isOpen={openIndex === index}
                             />

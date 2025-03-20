@@ -34,6 +34,7 @@ const Footer = () => {
             <SocialLink
               href="https://www.facebook.com/"
               target="_blank"
+              aria-label="Visit our Facebook page"
               rel="noopener noreferrer"
             >
               <Facebook />
@@ -42,28 +43,35 @@ const Footer = () => {
             <SocialLink
               href="https://www.instagram.com/"
               target="_blank"
+              aria-label="Visit our Instagram profile"
               rel="noopener noreferrer"
             >
               <Instagram />
             </SocialLink>
             
           </FooterSocialWrapper>
-          <FooterButton type='button' onClick={scrollToTop}>
+
+          <FooterButton type='button' aria-label="Go to Top" onClick={scrollToTop}>
             <Up />
           </FooterButton>
         </FooterLogoSocialWrapper>
+
         <FooterContactWrapper>
+
           <FooterContacts>
             79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
           </FooterContacts>
+
           <FooterEmail
             href="office@ecosolution.com"
             target="_blank"
             rel="noopener noreferrer">
               office@ecosolution.com
           </FooterEmail>
+          
           <FooterContacts>ecosolution © 2023</FooterContacts>
         </FooterContactWrapper>
+
       </Wrapper>
     </>
   );

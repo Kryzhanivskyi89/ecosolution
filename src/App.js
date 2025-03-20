@@ -14,16 +14,19 @@ function App() {
       <header>
         <Header />
       </header>
+
       <main>
         <div className="container">
-            <Hero />
-            <Values />
-            <Electricity />
-            <Cases />
-            <Faq/>
-            <ContactUs />
+          <Hero />
+          <Values />
+          <Electricity />
+          <Cases />
+          <Faq/>
+          <ContactUs />
         </div>
+
       </main>
+      
       <footer>
         <div className="container">
           <Footer />

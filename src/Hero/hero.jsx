@@ -37,23 +37,28 @@ import {
 const Main = () => {
   return (
     <HeroWrapper id='hero'>
+
       <HeroInfo>
+
         <HeroTitle>
           <TitleText>renewable energy for any task</TitleText>
         </HeroTitle>
+
         <Paragraph>
           <HeroText>
             Development and implementation of renewable non-polluting energy
             sources, generating power generation using energy wind, sun,
             water, biomass
           </HeroText>
+          
           <ButtonLearnMore
             type='button'
             onClick={scrollCases}>
             <TextLearnMore>Learn more</TextLearnMore>
-            <ArrowLearnMore />
+            <ArrowLearnMore alt="arrow right icon"/>
           </ButtonLearnMore>
         </Paragraph>
+
       </HeroInfo>
 
       <HeroLine />
@@ -71,7 +76,8 @@ const Main = () => {
         <HeroLegasy>ecosolution © 2023</HeroLegasy>
       </HeroContacts>
       
-      <HeroImage />
+      <HeroImage alt="wind turbine clean energy"/>
+      
     </HeroWrapper>
   
   );
